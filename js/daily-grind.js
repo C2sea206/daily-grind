@@ -45,6 +45,18 @@ if (urlParams.has("day")) {
 today = parseInt(today);
 
 switch (today) {
+  case 0:
+    today = "Sunday";
+    coffee = {
+      name: "Pumpkin Spice Latte",
+      color: "orange",
+      pic: "images/pumpkin-spice-latte.jpg",
+      alt: "A picture of a pumpkin spice latte coffee!",
+      day: "Sunday",
+      desc: `A picture of a pumpkin spice latte coffee, with extra pumkin spice! Making it very nice!!`,
+    };
+    break;
+
   case 1:
     today = "Monday";
     coffee = {
@@ -73,6 +85,50 @@ switch (today) {
 
   case 3:
     today = "Wednesday";
+    coffee = {
+      name: "Mocha",
+      color: "brown",
+      pic: "images/mocha.jpg",
+      alt: "A picture of a mocha coffee",
+      day: "Wednesday",
+      desc: `Love me some mocha coffee first thing in the morning!`,
+    };
+    break;
+
+  case 4:
+    today = "Thursday";
+    coffee = {
+      name: "Cold-Brew",
+      color: "blue",
+      pic: "images/cold-brew.jpg",
+      alt: "A picture of a cold-brew coffee",
+      day: "Thursday",
+      desc: `Love me some cold-brew coffee when its hot outside!`,
+    };
+    break;
+
+  case 5:
+    today = "Friday";
+    coffee = {
+      name: "Frappaccino",
+      color: "grey",
+      pic: "images/frappaccino.jpg",
+      alt: "A picture of a frappaccino coffee",
+      day: "Friday",
+      desc: `A nice refreshing ice cold blended frappaccino!`,
+    };
+    break;
+
+  case 6:
+    today = "Saturday";
+    coffee = {
+      name: "Caramel Latte",
+      color: "purple",
+      pic: "images/caramel-latte.jpg",
+      alt: "A picture of a caramel-latte coffee",
+      day: "Saturday",
+      desc: `Love me some Caramel-Latte coffee first thing in the morning, with extra foam!`,
+    };
     break;
 
   default:
